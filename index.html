@@ -7,36 +7,37 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <meta charset="utf-8">
 
-  <title>Janine Bernet TEST</title>
+  <title>Janine Bernet</title>
 </head>
 
 <body>
   <header id="header">
+    <div class="container">
     <div>
       <a href="index.html">
-        <img src="img/logo/logo.svg" alt="Janine Bernet">
+        <img src="img/logo/logo.svg" alt="Janine Bernet" class="logo">
       </a>
     </div>
     <nav>
       <ul>
         <li><a href="index.html">Portfolio</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="#contact.html">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="main_home">
-    <div>
+    <div class="container">
       <div>
-        <h1>Hi! I'm Janine</h1>
-        <span>I’m a UI/UX designer with a background in tourism and event management, who finds endless joy in being creative.</span>
+        <h3>Hi, I'm Janine! I'm a UI/UX designer with a background in tourism and event management, who finds endless joy in being creative. </h3>
+
       </div>
     </div>
     <div>
       <div>
         <h2>My Projects</h2>
-        <div>
+        <div class="row">
           <div>
             <picture>
               <source srcset="img/sup/sup_cover@1x.jpg" media="(max-widh:767px)">
@@ -51,7 +52,7 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="row">
         <div>
           <picture>
             <source srcset="img/noted/noted_cover@1x.jpg" media="(max-widh:767px)">
@@ -68,12 +69,13 @@
     </div>
   </main>
   <footer>
-    <footer id="footer">
+    <footer id="contact" class="txt-dark">
+        <div class="container">
       <h4>Get in Touch</h4>
-      <p>Let's work together!
-      </p>
       <a href="mailto:office@careerfoundry.com" class="button contact">Contact me</a>
       <div>
+        <ul>
+          <li class="socials">
         <a href="https://www.linkedin.com/in/janinebernet/" target="_blank">...</a>
         <svg baseProfile="tiny" height="24px" id="Layer_1" version="1.2" viewBox="0 0 24 24" width="24px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <g>
@@ -84,8 +86,10 @@
             <ellipse cx="6.5" cy="6.5" rx="1.55" ry="1.5" />
           </g>
         </svg>
+        </li>
       </div>
       <div>
+        <li class="socials">
         <a href="https://www.behance.net/janinebernet1" target="_blank">...</a>
         <svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <g>
@@ -102,6 +106,8 @@
           <g />
           <g />
         </svg>
+        </li>
+        </ul>
       </div>
       <p>Copyright © Janine Bernet 2022</p>
     </footer>

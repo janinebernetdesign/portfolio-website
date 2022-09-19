@@ -3,6 +3,10 @@ Colors used:
 Primary Color (Sand): #E9E0D4;
 Secondary Color (Green): #605B2F;
 */
+
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
@@ -14,6 +18,55 @@ body {
   /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
+
+header {
+  background-color: #E9E0D4;
+  padding-top: 0px
+  padding: 20px 0 4px;
+  position: fixed;
+  width: 100%
+  }
+
+  main {
+    padding-top: 169.52px;
+  }
+
+  footer {
+    background-color: #787350;
+  }
+
+
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 20px
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
+  }
+
+  nav > ul > li > a:visited {
+    color: #4a4a4a;
+  }
+
+  nav > ul > li > a:hover {
+    color: #4a4a4a;
+    opacity: 0.8;
+  }
+  nav > ul > li > a:active {
+    color: #4a4a4a;
+  }
+
 
 h1, h2, h3, h4 {
   line-height: 1.4;
@@ -39,18 +92,20 @@ h4 {
   font-weight: 400;
 }
 
-header {
-  background-color: #E9E0D4;
-  padding: 10px;
-  margin: 10px;
-  }
+
+  header  ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      }
+
 
   img {
     width: 100%;
   }
 
-  footer {
-    background-color: #605b2f;
+  .logo {
+    max-width: 200px;
   }
 
   a {
@@ -59,10 +114,6 @@ header {
     /* No underlining */
   }
 
-  a:visited {
-    /* visited link */
-    color: #C48AF6;
-  }
 
   a:hover,
   a:focus {
@@ -71,27 +122,26 @@ header {
     /* Underlining when hovering over a link */
   }
 
+  a:visited {
+    /* visited link */
+    color: #4a4a4a;
+  }
+
   a:active {
     /* selected link */
     color: #4340E7;
   }
 
-  a:hover,
-  a:focus {
-    color: #E9E0D4;
-    text-decoration: underline;
-  }
-
   .button {
     display: inline-block;
     /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #605B2F;
+    background-color: #787350;
     color: #ffffff;
     /* needed to override the default link color */
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid #994c30;
+    border-bottom: 2px solid #787350;
     /* width of the border, type, color */
     transition: 0.2s opacity;
   }
@@ -106,7 +156,7 @@ header {
     background-color: #000000;
     color: #ffffff;
     text-transform: uppercase;
-    border: 2px solid #ff7f50;
+    border: 2px solid #000000;
   }
 
   .button.contact:hover {
@@ -114,3 +164,29 @@ header {
     /* Reduces the opacity of the button to 80% */
     text-decoration: none;
   }
+
+
+  /*Layout styling */
+  .container {
+  padding: 0 15px;
+}
+
+.txt-dark {
+    color: #212E22;
+}
+
+.socials {
+  padding: 0;
+  max-widt: 40px
+
+
+.row {
+  margin: 15px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+#main_home span {
+  text-align: center; /* Centers text */
+}
