@@ -109,8 +109,14 @@ header ul {
   list-style-type: none;
 }
 
+footer {
+  background-color: #787350;
+}
+
 img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .logo {
@@ -142,15 +148,13 @@ a:active {
 
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #787350;
-  color: #ffffff;
-  /* needed to override the default link color */
+  color: white;
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #787350;
-  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
@@ -165,6 +169,7 @@ a:active {
   color: #ffffff;
   text-transform: uppercase;
   border: 2px solid #000000;
+  transition: 0.2s opacity;
 }
 
 .button.contact:hover {
@@ -190,6 +195,115 @@ a:active {
     /* 25px top and bottom, 0 left and right */
   }
 
-  footer {
-    background-color: #787350;
+  @keyframes color-change {
+    0% {
+      fill: #edc655;
+    }
+
+    50% {
+      fill: #fcffad;
+    }
+
+    100% {
+      fill: #f76414;
+    }
+  }
+
+  .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes cloud-move {
+    from {
+      transform: translate(0, 50px);
+    }
+
+    to {
+      transform: translate(200px, 50px);
+    }
+  }
+
+  .cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes cloud-move-reverse {
+    from {
+      transform: translate(446px, 48px);
+    }
+
+    to {
+      transform: translate(100px, 48px);
+    }
+  }
+
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
+
+  /* ==============================
+Medium devices (640px and larger)
+================================= */
+  @media only screen and (min-width: 640px) {
+      {
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
+
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
+    }
+
+    body {
+      font-size: 18px;
+      /* Sets the font size to 18px */
+    }
+
+    .col-md-6 {
+      width: 50%;
+    }
+
+    .col-lg-5 {
+      width: 41.66%;
+    }
+
+    .col-lg-7 {
+      width: 58.33%;
+    }
+
+    [class*="col-"] {
+      float: left;
+      padding: 10px;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    #about-page h3 {
+      margin-top: 0;
+    }
+  }
+
+  /* ==============================
+Large devices (1024px or larger)
+================================= */
+  @media only screen and (min-width: 1024px) {
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
