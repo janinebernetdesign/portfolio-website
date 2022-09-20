@@ -3,10 +3,10 @@ Colors used:
 Primary Color (Sand): #E9E0D4;
 Secondary Color (Green): #605B2F;
 */
-
 * {
   box-sizing: border-box;
 }
+
 body {
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
@@ -18,55 +18,6 @@ body {
   /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
-
-header {
-  background-color: #E9E0D4;
-  padding-top: 0px
-  padding: 20px 0 4px;
-  position: fixed;
-  width: 100%
-  }
-
-  main {
-    padding-top: 169.52px;
-  }
-
-  footer {
-    background-color: #787350;
-  }
-
-
-  nav > ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    right: 20px
-  }
-
-  nav > ul > li {
-    display: inline-block;
-  }
-
-  nav > ul > li > a {
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #4a4a4a;
-  }
-
-  nav > ul > li > a:visited {
-    color: #4a4a4a;
-  }
-
-  nav > ul > li > a:hover {
-    color: #4a4a4a;
-    opacity: 0.8;
-  }
-  nav > ul > li > a:active {
-    color: #4a4a4a;
-  }
-
 
 h1, h2, h3, h4 {
   line-height: 1.4;
@@ -92,101 +43,153 @@ h4 {
   font-weight: 400;
 }
 
+main {
+  padding-top: 169.52px;
+}
 
-  header  ul {
-      padding: 0;
-      margin: 0;
-      list-style-type: none;
-      }
+#hero h1 {
+  text-align: center;
+  /* Centers text */
+}
 
+#main_home span {
+  text-align: center;
+  /* Centers text */
+}
 
-  img {
-    width: 100%;
-  }
+header {
+  background-color: #E9E0D4;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  height: 180px;
+  padding: 5px 0;
+}
 
-  .logo {
-    max-width: 200px;
-  }
+header nav {
+  margin-top: -50px;
+}
 
-  a {
-    color: #4A4A4A;
-    text-decoration: none;
-    /* No underlining */
-  }
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 20px
+}
 
+nav>ul>li {
+  display: inline-block;
+}
 
-  a:hover,
-  a:focus {
-    color: #5350e7;
-    text-decoration: underline;
-    /* Underlining when hovering over a link */
-  }
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
 
-  a:visited {
-    /* visited link */
-    color: #4a4a4a;
-  }
+nav>ul>li>a:visited {
+  color: #4a4a4a;
+}
 
-  a:active {
-    /* selected link */
-    color: #4340E7;
-  }
+nav>ul>li>a:hover {
+  color: #4a4a4a;
+  opacity: 0.8;
+}
 
-  .button {
-    display: inline-block;
-    /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #787350;
-    color: #ffffff;
-    /* needed to override the default link color */
-    font-weight: 400;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid #787350;
-    /* width of the border, type, color */
-    transition: 0.2s opacity;
-  }
+nav>ul>li>a:active {
+  color: #4a4a4a;
+}
 
-  .button:hover {
-    opacity: 0.8;
-    /* Reduces the opacity of the button to 80% */
-    text-decoration: none;
-  }
+header ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
 
-  .button.contact {
-    background-color: #000000;
-    color: #ffffff;
-    text-transform: uppercase;
-    border: 2px solid #000000;
-  }
+img {
+  width: 100%;
+}
 
-  .button.contact:hover {
-    opacity: 0.8;
-    /* Reduces the opacity of the button to 80% */
-    text-decoration: none;
-  }
+.logo {
+  max-width: 200px;
+}
 
+a {
+  color: #4A4A4A;
+  text-decoration: none;
+  /* No underlining */
+}
 
-  /*Layout styling */
-  .container {
+a:hover,
+a:focus {
+  color: #5350e7;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
+
+a:visited {
+  /* visited link */
+  color: #ffffff;
+}
+
+a:active {
+  /* selected link */
+  color: #4340E7;
+}
+
+.button {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #787350;
+  color: #ffffff;
+  /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #787350;
+  /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: #000000;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 2px solid #000000;
+}
+
+.button.contact:hover {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+/*Layout styling */
+.container {
   padding: 0 15px;
 }
 
 .txt-dark {
-    color: #212E22;
+  color: #000000;
 }
 
 .socials {
   padding: 0;
-  max-widt: 40px
 
+  max-widt: 40px .row {
+    margin: 15px 0;
+    /* 25px top and bottom, 0 left and right */
+  }
 
-.row {
-  margin: 15px 0; /* 25px top and bottom, 0 left and right */
-}
-
-#hero h1 {
-  text-align: center; /* Centers text */
-}
-#main_home span {
-  text-align: center; /* Centers text */
-}
+  footer {
+    background-color: #787350;
+  }
