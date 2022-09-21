@@ -68,14 +68,13 @@ header {
 }
 
 header nav {
-  margin-top: -50px;
+  margin-top: 50px;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  position: absolute;
   right: 20px
 }
 
@@ -189,121 +188,123 @@ a:active {
 
 .socials {
   padding: 0;
+  max-width: 40px
+}
 
-  max-widt: 40px .row {
-    margin: 15px 0;
-    /* 25px top and bottom, 0 left and right */
+.row {
+  margin: 15px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
   }
 
-  @keyframes color-change {
-    0% {
-      fill: #edc655;
-    }
-
-    50% {
-      fill: #fcffad;
-    }
-
-    100% {
-      fill: #f76414;
-    }
+  50% {
+    fill: #fcffad;
   }
 
-  .sun {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
   }
 
-  @keyframes cloud-move {
-    from {
-      transform: translate(0, 50px);
-    }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
 
-    to {
-      transform: translate(200px, 50px);
-    }
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
   }
 
-  .cloud-front {
-    animation-duration: 30s;
-    animation-name: cloud-move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+  to {
+    transform: translate(100px, 48px);
   }
+}
 
-  @keyframes cloud-move-reverse {
-    from {
-      transform: translate(446px, 48px);
-    }
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
 
-    to {
-      transform: translate(100px, 48px);
-    }
-  }
-
-  .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
-  }
-
-  /* ==============================
+/* ==============================
 Medium devices (640px and larger)
 ================================= */
-  @media only screen and (min-width: 640px) {
-      {
-      text-align: unset;
-      padding: 20px 0 13px;
-    }
-
-    nav {
-      width: auto;
-      float: right;
-      margin-top: 4px;
-    }
-
-    body {
-      font-size: 18px;
-      /* Sets the font size to 18px */
-    }
-
-    .col-md-6 {
-      width: 50%;
-    }
-
-    .col-lg-5 {
-      width: 41.66%;
-    }
-
-    .col-lg-7 {
-      width: 58.33%;
-    }
-
-    [class*="col-"] {
-      float: left;
-      padding: 10px;
-    }
-
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-
-    #about-page h3 {
-      margin-top: 0;
-    }
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
   }
 
-  /* ==============================
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  body {
+    font-size: 18px;
+    /* Sets the font size to 18px */
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+}
+
+/* ==============================
 Large devices (1024px or larger)
 ================================= */
-  @media only screen and (min-width: 1024px) {
-    .container {
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
