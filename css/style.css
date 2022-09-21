@@ -112,6 +112,10 @@ footer {
   background-color: #787350;
 }
 
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
 
 img {
   width: 100%;
