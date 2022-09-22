@@ -2,17 +2,20 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://kit.fontawesome.com/68160408ab.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <meta charset="utf-8">
-  <title>Janine Bernet TEST</title>
+
+  <title>Janine Bernet</title>
 </head>
 
 <body id="about-page">
 
-    <header id="header">
-      <div class="container">
+  <header id="header">
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
         <a href="index.html">
           <img src="img/logo/logo.svg" alt="Janine Bernet" class="logo">
         </a>
@@ -21,77 +24,96 @@
             <li><a href="index.html">Portfolio</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
-        </div>
-    </header>
+      </div>
+  </header>
 
   <main id="main_about">
     <div class="container">
       <h1>About</h1>
-    </div>
-    <div>
-      <picture>
-        <source srcset="img/about/about@1x.jpg" media="(max-width:767px)">
-        <img src="img/about/about@2x.jpg" </picture>
-    </div>
-    <div>
-      <h2>My Story</h2>
-      <p>
-        I’m a UI/UX designer with a background in tourism and event management,
-        where I gained a lot of knowledge about human behavior, communicating with all
-        kinds of customers and truly understanding their problems.
-      </p>
-      <p>
-        Incorporating both my experience in human-centered work and my endless
-        joy to be creative, I want to build products that are truly delightful to
-        use and visually appealing.
-      </p>
-      <p>
-        In my free time, you can find me chasing waves,
-        lost in nature, connecting with others, doing sports,
-        learning, reading or practicing yoga - basically engaging
-        with my surroundings as much as possible.
-      </p>
-      <a href="files/resume.pdf" class="button.contact" target="_blank">My Resume</a>
-    </div>
-    <div class="row">
-      <h2>Skills & Tools</h2>
-      <div class="column col-md-6 col-lg-7">
-        <h3>Skills</h3>
-        <ul>
-          <li>
-            User Experience Design (Competitor Analysus, User Interviews, User Flows)
-          </li>
-          <li>
-            User Interface Design
-          </li>
-          <li>
-            Prototyping
-          </li>
-          <li>
-            Wireframing
-          </li>
-          <li>
-            HTML/CSS & Javascript
-          </li>
-        </ul>
-      </div>
-      <div class="column col-md-6 col-lg-5">
-        <h3>Tools I Use</h3>
-        <ul>
-          <li>
-            Figma
-          </li>
-          <li>
-            Sketch
-          </li>
-        </ul>
-      </div>
-    </div>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-5">
 
 
+
+          <img class="profile" src="img/about/about@2x.jpg">
+
+
+        </div>
+
+        <div class="col-md-6 col-lg-5">
+
+          <h2>My Story</h2>
+          <p>
+            I’m a UI/UX designer with a background in tourism and event management,
+            where I gained a lot of knowledge about human behavior, communicating with all
+            kinds of customers and truly understanding their problems.
+          </p>
+          <p>
+            Incorporating both my experience in human-centered work and my endless
+            joy to be creative, I want to build products that are truly delightful to
+            use and visually appealing.
+          </p>
+          <p>
+            In my free time, you can find me chasing waves,
+            lost in nature, connecting with others, doing sports,
+            learning, reading or practicing yoga - basically engaging
+            with my surroundings as much as possible.
+          </p>
+          <a href="files/resume.pdf" class="button contact" target="_blank" class="profile">My Resume</a>
+        </div>
+
+
+
+
+      </div>
+
+      <div class="row">
+        <h2>Skills & Tools</h2>
+        <div class="column col-md-6 col-lg-7">
+          <h3>Skills</h3>
+          <ul>
+            <li>
+              User Experience Design (Competitor Analysus, User Interviews, User Flows)
+            </li>
+            <li>
+              User Interface Design
+            </li>
+            <li>
+              Prototyping
+            </li>
+            <li>
+              Wireframing
+            </li>
+            <li>
+              HTML/CSS & Javascript
+            </li>
+          </ul>
+        </div>
+        <div class="column col-md-6 col-lg-5">
+          <h3>Tools I Use</h3>
+          <ul>
+            <li>
+              Figma
+            </li>
+            <li>
+              Sketch
+            </li>
+          </ul>
+        </div>
+        <div>
+        </div>
+      </div>
+
+
+    </div>
   </main>
+
+
+
   <footer>
     <footer id="contact" class="txt-dark">
       <div class="container">
@@ -126,8 +148,9 @@
           </ul>
         </div>
         <p>Copyright © Janine Bernet 2022</p>
-            </div>
+      </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha384-i61gTtaoovXtAbKjo903+O55Jkn2+RtzHtvNez+yI49HAASvznhe9sZyjaSHTau9" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 
 </body>

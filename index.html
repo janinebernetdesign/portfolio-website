@@ -2,10 +2,11 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://kit.fontawesome.com/68160408ab.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <meta charset="utf-8">
 
   <title>Janine Bernet</title>
 </head>
@@ -13,6 +14,7 @@
 <body>
   <header id="header">
     <div class="container">
+   <div class="navtoggle" id="myNavtoggle">
       <a href="index.html">
         <img src="img/logo/logo.svg" alt="Janine Bernet" class="logo">
       </a>
@@ -21,6 +23,7 @@
           <li><a href="index.html">Portfolio</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
       </div>
@@ -32,23 +35,10 @@
         <h3>Hi, I'm Janine! I'm a UI/UX designer with a background in tourism and event management, who finds endless joy in being creative. </h3>
       </div>
     </div>
-    <div>
+   <div class="container">
       <h2>My Projects</h2>
-      <div class="row">
-        <div class="column col-md-6 col-lg-7">
-          <picture>
-            <source srcset="img/sup/sup_cover@1x.jpg" media="(max-widh:767px)">
-            <img src="img/sup/sup_cover@2x.jpg" alt="My Image">
-          </picture>
-        </div>
-        <div class="column col-md-6 col-lg-5">
-          <h3>SUP - Messenger App</h3>
-          <p>SUP - A messenger app designed reusing common components.
-          </p>
-          <a href="#" class="button">Read more</a>
-        </div>
-      </div>
-    </div>
+
+
     <div class="row">
       <div class="column col-md-6 col-lg-7">
         <picture>
@@ -63,9 +53,32 @@
         <a href="noted.html" class="button">Read more</a>
       </div>
     </div>
+
+
+
+
+         <div class="row">
+        <div class="column col-md-6 col-lg-7">
+          <picture>
+            <source srcset="img/sup/sup_cover@1x.jpg" media="(max-widh:767px)">
+            <img src="img/sup/sup_cover@2x.jpg" alt="My Image">
+          </picture>
+        </div>
+        <div class="column col-md-6 col-lg-5">
+          <h3>SUP - Messenger App</h3>
+          <p>SUP - A messenger app designed reusing common components.
+          </p>
+          <p>Page Coming Soon...</p>
+        </div>
+      </div>
+
+
+
+
+
     <div class="row">
-      <div class="column col-md-6 col-lg-7">
-        <svg id="about-picture" xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="auto" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <div class="col-md-6 col-lg-7">
+        <svg id="about-picture" xmlns="http://www.w3.org/2000/svg" class="berlin-illustration"  viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
           <defs>
             <polygon id="a" points=".06 231.917 .06 .929 688.717 .929 688.717 231.917"></polygon>
           </defs>
@@ -1336,17 +1349,20 @@
           </g>
         </svg>
       </div>
-      <div class="column col-md-6 col-lg-5">
+      <div class="col-md-6 col-lg-5">
         <h3>Animation</h3>
-        <p>learn to animate
+        <p>learn to animate SVG illustration.
         </p>
-        <a href="#" class="button">Read more</a>
+
       </div>
     </div>
+
+
+         </div>
   </main>
 
 
-  <footer>
+
     <footer id="contact" class="txt-dark">
       <div class="container">
         <h4>Get in Touch</h4>
@@ -1354,7 +1370,7 @@
         <div>
           <ul>
             <li class="socials">
-              <a href="https://www.linkedin.com/in/janinebernet/" target="_blank"> <svg baseProfile="tiny" height="24px" id="Layer_1" version="1.2" viewBox="0 0 24 24" width="24px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+              <a href="https://www.linkedin.com/in/janinebernet/" target="_blank"> <svg baseProfile="tiny" height="44px" id="Layer_1" version="1.2" viewBox="0 0 24 24" width="44px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink">
                   <g>
                     <path
@@ -1382,7 +1398,12 @@
         <p>Copyright © Janine Bernet 2022</p>
         </div>
     </footer>
-    <script src="js/scripts.js"></script>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha384-i61gTtaoovXtAbKjo903+O55Jkn2+RtzHtvNez+yI49HAASvznhe9sZyjaSHTau9" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
 </body>
 
 </html>

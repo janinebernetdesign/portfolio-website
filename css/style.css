@@ -7,6 +7,10 @@ Secondary Color (Green): #605B2F;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
@@ -67,19 +71,53 @@ header {
   padding: 5px 0;
 }
 
+.logo {
+  max-width: 150px;
+}
+
 header nav {
   margin-top: 50px;
 }
 
-nav>ul {
-  list-style-type: none;
+header>ul {
   padding: 0;
   margin: 0;
-  right: 20px
+  list-style-type: none;
 }
 
-nav>ul>li {
-  display: inline-block;
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  font-size: 30px;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 12px 0;
+  border-top: 1px solid #4a4a4a;
+background-color: #E9E0D4;
+width: 100%;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 nav>ul>li>a {
@@ -102,30 +140,31 @@ nav>ul>li>a:active {
   color: #4a4a4a;
 }
 
-header ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
 footer {
   background-color: #787350;
+  padding: 40px 0;
+  text-align: center;
 }
 
 footer ul {
   list-style-type: none;
   padding: 0;
+  margin-left: 0;
+  margin-top: 40px;
+}
+
+footer ul li {
+  display: inline-block
+}
+
+footer svg {
+  margin: 10px;
 }
 
 img {
   width: 100%;
   max-width: 100%;
   height: auto;
-}
-
-
-.logo {
-  max-width: 200px;
 }
 
 a {
@@ -192,13 +231,8 @@ a:active {
   color: #000000;
 }
 
-.socials {
-  padding: 0;
-  max-width: 40px
-}
-
 .row {
-  margin: 15px 0;
+  margin: 25px 0;
   /* 25px top and bottom, 0 left and right */
 }
 
@@ -256,10 +290,24 @@ a:active {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+/*About page*/
+.profile {
+  height: 60%;
+  width: auto;
+  max-width: 80%;
+  display: block;
+  margin: 20% auto 0% auto;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  body {
+    font-size: 18px;
+    /* Sets the font size to 18px */
+  }
+
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -271,9 +319,25 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
-  body {
-    font-size: 18px;
-    /* Sets the font size to 18px */
+  .navtoggle.responsive nav {
+    padding: 0px 0 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle.responsive li {
+    padding: 0px 0;
+    border-top: 0px solid rgb(79, 122, 165);
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   .col-md-6 {
